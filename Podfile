@@ -4,4 +4,5 @@
 target 'NavigationApp' do
   use_frameworks!
   pod 'GoogleMaps', '5.0.0'
+  pod 'SideMenu', '~> 6.0'
 end
