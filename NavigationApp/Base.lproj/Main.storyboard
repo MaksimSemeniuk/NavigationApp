@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +18,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-37-ETH">
+                                <rect key="frame" x="0.0" y="707" width="414" height="155"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m5c-HH-18q">
+                                        <rect key="frame" x="60" y="30" width="294" height="95"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Php-d0-QQZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="41"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0a1-WN-2tf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="294" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1Z-Ez-Jzv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 м" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aea-ip-MKL">
+                                                                <rect key="frame" x="147" y="0.0" width="147" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZGm-z4-gyZ">
+                                                        <rect key="frame" x="0.0" y="20.5" width="294" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnY-xU-4vl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 мин." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-v9-OUa">
+                                                                <rect key="frame" x="147" y="0.0" width="147" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-nv-lwA">
+                                                <rect key="frame" x="0.0" y="51" width="294" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-fc-0EA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="137" height="44"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="2r2-vR-8kb"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Начать запись">
+                                                            <color key="titleColor" name="naLightGreyColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-FC-3s6">
+                                                        <rect key="frame" x="157" y="0.0" width="137" height="44"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="sfQ-Nq-1Ij"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Сохранить">
+                                                            <color key="titleColor" name="naLightGreyColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="naLightGreyColor"/>
+                                <constraints>
+                                    <constraint firstItem="m5c-HH-18q" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="60" id="6rc-zd-aEc"/>
+                                    <constraint firstItem="m5c-HH-18q" firstAttribute="top" secondItem="Rr9-37-ETH" secondAttribute="top" constant="30" id="SWv-U7-Aw6"/>
+                                    <constraint firstAttribute="bottom" secondItem="m5c-HH-18q" secondAttribute="bottom" constant="30" id="p2g-3b-Hxs"/>
+                                    <constraint firstAttribute="trailing" secondItem="m5c-HH-18q" secondAttribute="trailing" constant="60" id="q7W-LM-7hX"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyN-ir-2ex" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -25,14 +107,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rr9-37-ETH" secondAttribute="trailing" id="2tg-XZ-5XC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rr9-37-ETH" secondAttribute="bottom" id="4XJ-gE-MfZ"/>
                             <constraint firstItem="JyN-ir-2ex" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DdT-wi-IsR"/>
                             <constraint firstItem="JyN-ir-2ex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HNo-6b-S6S"/>
+                            <constraint firstItem="Rr9-37-ETH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T9d-i6-9tF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JyN-ir-2ex" secondAttribute="bottom" id="VjM-co-wvR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JyN-ir-2ex" secondAttribute="trailing" id="xvj-BV-orv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="distanceLabel" destination="aea-ip-MKL" id="zZh-ud-ctc"/>
                         <outlet property="mapView" destination="JyN-ir-2ex" id="5Yv-Uy-A20"/>
+                        <outlet property="recordButton" destination="zY5-fc-0EA" id="6Ai-1P-PFw"/>
+                        <outlet property="recordInfiStackView" destination="Php-d0-QQZ" id="J5b-0k-fEL"/>
+                        <outlet property="recordInfoView" destination="Rr9-37-ETH" id="JOr-rA-5aF"/>
+                        <outlet property="saveButton" destination="wu5-FC-3s6" id="yj2-mk-WfK"/>
+                        <outlet property="timeLabel" destination="6mt-v9-OUa" id="4Gt-iF-ep0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,6 +132,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="naLightGreyColor">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,7 +9,15 @@ import UIKit
 import GoogleMaps
 
 class MapViewController: UIViewController {
+    
     @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var recordInfoView: UIView!
+    @IBOutlet weak var recordInfiStackView: UIStackView!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    
     private let locationManager = CLLocationManager()
     private var observation: NSKeyValueObservation?
     private var firstUserLocation: CLLocation? {
@@ -44,9 +52,11 @@ class MapViewController: UIViewController {
 extension MapViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        
     }
     
     func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
+        
     }
 
 }
