@@ -25,22 +25,17 @@ class MapViewController: UIViewController {
     private let path = GMSMutablePath()
     private var observation: NSKeyValueObservation?
     private var isRecording = false
-    private var firstUserLocation: CLLocation? {
-        didSet {
-            // Set first user location and move camera to it. When invalidate observation.
-            guard oldValue == nil, let firstLocation = firstUserLocation else { return }
-            mapView.camera = GMSCameraPosition(target: firstLocation.coordinate, zoom: 15)
-            observation?.invalidate()
-        }
-    }
+    private var lastUserLocation: CLLocation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         locationManager.delegate = self
-        // Listen to the myLocation property of GMSMapView.
+        // Listen to the myLocation property of GMSMapView, get first location and invalidate observation.
         observation = mapView.observe(\.myLocation, options: [.new]) { [weak self] mapView, _ in
-            self?.firstUserLocation = mapView.myLocation
+            guard let location = mapView.myLocation else { return }
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15)
+            self?.observation?.invalidate()
         }
         updateUI()
         saveButton.setEnabled(false)
@@ -54,6 +49,11 @@ class MapViewController: UIViewController {
         path.add(coordinate)
         let polyline = GMSPolyline(path: path)
         polyline.map = mapView
+    }
+    
+    private func calculateDistance(from tuple: (lastLocation: CLLocation, newLocation: CLLocation)) -> Double {
+        let distanceInMeters = tuple.newLocation.distance(from: tuple.lastLocation)
+        return distanceInMeters
     }
     
     private func updateUI() {
@@ -73,9 +73,17 @@ class MapViewController: UIViewController {
         locationManager.startUpdatingLocation()
     }
     
+    private func clear() {
+        lastUserLocation = nil
+        path.removeAllCoordinates()
+        distanceLabel.text = "0 meters"
+        mapView.clear()
+    }
+    
     private func stopRouteRecording() {
         recordButton.setTitle("Start recording", for: .normal)
         updateUI()
+        clear()
         locationManager.stopUpdatingLocation()
     }
     
@@ -85,7 +93,6 @@ class MapViewController: UIViewController {
         isRecording = !isRecording
         isRecording ? startRouteRecording() : stopRouteRecording()
         saveButton.setEnabled(isRecording)
-        
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
@@ -120,6 +127,12 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
         addCoordinateToPath(coordinate: location.coordinate)
+        guard let lastLocation = lastUserLocation else {
+            lastUserLocation = location
+            return
+        }
+        distanceLabel.text = "\(Int(calculateDistance(from: (lastLocation, location)))) meters"
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
