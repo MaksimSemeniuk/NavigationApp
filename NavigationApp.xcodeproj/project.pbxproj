@@ -11,6 +11,7 @@
 		F81D3C002688ACD100F4030E /* UIView+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3BFF2688ACD100F4030E /* UIView+Attributes.swift */; };
 		F81D3C032688BAE400F4030E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3C022688BAE400F4030E /* CustomButton.swift */; };
 		F81D3C052688BB7200F4030E /* UIColor+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3C042688BB7200F4030E /* UIColor+Name.swift */; };
+		F81D3C092688E37D00F4030E /* SideMenuRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3C082688E37D00F4030E /* SideMenuRootViewController.swift */; };
 		F8C3A1BA267126BC0016990B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A1B9267126BC0016990B /* AppDelegate.swift */; };
 		F8C3A1BC267126BC0016990B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A1BB267126BC0016990B /* SceneDelegate.swift */; };
 		F8C3A1BE267126BC0016990B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A1BD267126BC0016990B /* MapViewController.swift */; };
@@ -26,6 +27,7 @@
 		F81D3BFF2688ACD100F4030E /* UIView+Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Attributes.swift"; sourceTree = "<group>"; };
 		F81D3C022688BAE400F4030E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F81D3C042688BB7200F4030E /* UIColor+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Name.swift"; sourceTree = "<group>"; };
+		F81D3C082688E37D00F4030E /* SideMenuRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRootViewController.swift; sourceTree = "<group>"; };
 		F8C3A1B6267126BC0016990B /* NavigationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C3A1B9267126BC0016990B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8C3A1BB267126BC0016990B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				F8C3A1C2267126BC0016990B /* Assets.xcassets */,
 				F8C3A1C4267126BC0016990B /* LaunchScreen.storyboard */,
 				F8C3A1C7267126BC0016990B /* Info.plist */,
+				F81D3C082688E37D00F4030E /* SideMenuRootViewController.swift */,
 			);
 			path = NavigationApp;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81D3C092688E37D00F4030E /* SideMenuRootViewController.swift in Sources */,
 				F8C3A1BE267126BC0016990B /* MapViewController.swift in Sources */,
 				F81D3C002688ACD100F4030E /* UIView+Attributes.swift in Sources */,
 				F81D3C052688BB7200F4030E /* UIColor+Name.swift in Sources */,
