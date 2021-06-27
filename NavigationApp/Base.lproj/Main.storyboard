@@ -23,101 +23,105 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-37-ETH">
-                                <rect key="frame" x="0.0" y="707" width="414" height="155"/>
+                                <rect key="frame" x="0.0" y="717" width="414" height="145"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-jU-Czg">
-                                        <rect key="frame" x="30" y="10" width="354" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SqO-WY-S7n">
+                                        <rect key="frame" x="30" y="10" width="354" height="115"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qHl-re-oA8">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="35.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-jU-Czg">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="891-57-wck">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="35.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D4-WG-bd8">
-                                                        <rect key="frame" x="177" y="0.0" width="177" height="35.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qHl-re-oA8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="891-57-wck">
+                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D4-WG-bd8">
+                                                                <rect key="frame" x="177" y="0.0" width="177" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-4p-ha7">
+                                                        <rect key="frame" x="0.0" y="30.5" width="354" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6u-yA-UqI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-3Y-vPx">
+                                                                <rect key="frame" x="177" y="0.0" width="177" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-4p-ha7">
-                                                <rect key="frame" x="0.0" y="35.5" width="354" height="35.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-ks-eYn">
+                                                <rect key="frame" x="0.0" y="71" width="354" height="44"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6u-yA-UqI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="35.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-3Y-vPx">
-                                                        <rect key="frame" x="177" y="0.0" width="177" height="35.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-4i-Mhg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="44"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="HBM-VX-lmU"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Start recording">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMd-xQ-93o"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mel-lP-PeZ" customClass="CustomButton" customModule="NavigationApp" customModuleProvider="target">
+                                                        <rect key="frame" x="182" y="0.0" width="172" height="44"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="X2P-X1-mjJ"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Save route">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Rc-Pj-Jql"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-ks-eYn">
-                                        <rect key="frame" x="30" y="91" width="354" height="44"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-4i-Mhg">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="44"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="HBM-VX-lmU"/>
-                                                </constraints>
-                                                <state key="normal" title="Start recording">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
-                                                        <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMd-xQ-93o"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mel-lP-PeZ" customClass="CustomButton" customModule="NavigationApp" customModuleProvider="target">
-                                                <rect key="frame" x="182" y="0.0" width="172" height="44"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="X2P-X1-mjJ"/>
-                                                </constraints>
-                                                <color key="tintColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Save route"/>
-                                                <state key="disabled">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
-                                                        <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Rc-Pj-Jql"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="naLightGreyColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="155" id="E5N-rY-d0D"/>
-                                    <constraint firstAttribute="trailing" secondItem="QfX-jU-Czg" secondAttribute="trailing" constant="30" id="FNJ-dg-gLs"/>
-                                    <constraint firstItem="QfX-jU-Czg" firstAttribute="top" secondItem="Rr9-37-ETH" secondAttribute="top" constant="10" id="M24-Jr-yNS"/>
-                                    <constraint firstItem="fyf-ks-eYn" firstAttribute="top" secondItem="QfX-jU-Czg" secondAttribute="bottom" constant="10" id="R0J-K7-y4k"/>
-                                    <constraint firstItem="fyf-ks-eYn" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="30" id="Uzh-6V-PUO"/>
-                                    <constraint firstItem="QfX-jU-Czg" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="30" id="eda-47-eBW"/>
-                                    <constraint firstAttribute="bottom" secondItem="fyf-ks-eYn" secondAttribute="bottom" constant="20" id="kTE-Jb-XJT"/>
-                                    <constraint firstAttribute="trailing" secondItem="fyf-ks-eYn" secondAttribute="trailing" constant="30" id="lRB-ac-d7t"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="Hg5-hq-niH"/>
+                                    <constraint firstItem="SqO-WY-S7n" firstAttribute="top" secondItem="Rr9-37-ETH" secondAttribute="top" constant="10" id="c0v-QU-rOB"/>
+                                    <constraint firstAttribute="trailing" secondItem="SqO-WY-S7n" secondAttribute="trailing" constant="30" id="n3t-Zz-dir"/>
+                                    <constraint firstItem="SqO-WY-S7n" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="30" id="qex-iM-4oa"/>
+                                    <constraint firstAttribute="bottom" secondItem="SqO-WY-S7n" secondAttribute="bottom" constant="20" id="qlM-Vl-d7o"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
@@ -142,9 +146,9 @@
                         <outlet property="distanceLabel" destination="9D4-WG-bd8" id="s2e-k8-Q3l"/>
                         <outlet property="mapView" destination="JyN-ir-2ex" id="5Yv-Uy-A20"/>
                         <outlet property="recordButton" destination="aCx-4i-Mhg" id="giL-5p-E4g"/>
+                        <outlet property="recordInfoStackView" destination="QfX-jU-Czg" id="FMY-he-CKX"/>
                         <outlet property="recordInfoView" destination="Rr9-37-ETH" id="JOr-rA-5aF"/>
-                        <outlet property="recordInfoViewBottomConstraint" destination="4XJ-gE-MfZ" id="Q8i-eP-xoh"/>
-                        <outlet property="recordInfoViewHeightConstraint" destination="E5N-rY-d0D" id="SuB-jU-jDF"/>
+                        <outlet property="recordInfoViewHeightConstraint" destination="Hg5-hq-niH" id="Ae3-En-uTj"/>
                         <outlet property="saveButton" destination="Mel-lP-PeZ" id="78b-AF-gFg"/>
                         <outlet property="timeLabel" destination="Df9-3Y-vPx" id="YCm-ah-sTs"/>
                     </connections>

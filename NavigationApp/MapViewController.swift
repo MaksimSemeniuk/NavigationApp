@@ -17,9 +17,10 @@ class MapViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var saveButton: CustomButton!
-    @IBOutlet weak var recordInfoViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var recordInfoViewHeightConstraint: NSLayoutConstraint!
     
+    private let recordInfoViewMinHeight: CGFloat = 74
+    private let recordInfoViewMaxHeight: CGFloat = 145
     private let locationManager = CLLocationManager()
     private let path = GMSMutablePath()
     private var observation: NSKeyValueObservation?
@@ -41,12 +42,8 @@ class MapViewController: UIViewController {
         observation = mapView.observe(\.myLocation, options: [.new]) { [weak self] mapView, _ in
             self?.firstUserLocation = mapView.myLocation
         }
+        updateUI()
         saveButton.setEnabled(false)
-        mapView.padding = UIEdgeInsets(
-            top: view.safeAreaInsets.top,
-            left: 0,
-            bottom: recordInfoViewHeightConstraint.constant,
-            right: 0)
     }
     
     deinit {
@@ -59,13 +56,26 @@ class MapViewController: UIViewController {
         polyline.map = mapView
     }
     
+    private func updateUI() {
+        UIView.animate(withDuration: 0.3) {
+            self.recordInfoStackView.isHidden = !self.isRecording
+            self.mapView.padding = UIEdgeInsets(
+                top: self.view.safeAreaInsets.top,
+                left: 0,
+                bottom: self.isRecording ? self.recordInfoViewMaxHeight : self.recordInfoViewMinHeight,
+                right: 0)
+        }
+    }
+    
     private func startRouteRecording() {
         recordButton.setTitle("Stop recording", for: .normal)
+        updateUI()
         locationManager.startUpdatingLocation()
     }
     
     private func stopRouteRecording() {
         recordButton.setTitle("Start recording", for: .normal)
+        updateUI()
         locationManager.stopUpdatingLocation()
     }
     

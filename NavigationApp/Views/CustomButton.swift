@@ -10,6 +10,8 @@ import UIKit
 class CustomButton: UIButton {
     func setEnabled(_ isEnabled: Bool) {
         self.isEnabled = isEnabled
-        self.backgroundColor = isEnabled ? UIColor.accentColor : UIColor.accentColor.withAlphaComponent(0.5)
+        UIView.animate(withDuration: 0.2) {
+            self.backgroundColor = isEnabled ? UIColor.accentColor : UIColor.accentColor.withAlphaComponent(0.5)
+        }
     }
 }
