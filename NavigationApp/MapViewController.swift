@@ -16,7 +16,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var saveButton: CustomButton!
     @IBOutlet weak var recordInfoViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var recordInfoViewHeightConstraint: NSLayoutConstraint!
     
@@ -41,10 +41,7 @@ class MapViewController: UIViewController {
         observation = mapView.observe(\.myLocation, options: [.new]) { [weak self] mapView, _ in
             self?.firstUserLocation = mapView.myLocation
         }
-        locationManager.startUpdatingLocation()
-        mapView.isMyLocationEnabled = true
-        mapView.settings.myLocationButton = true
-        print("Size: \(recordInfoView.intrinsicContentSize.height)")
+        saveButton.setEnabled(false)
         mapView.padding = UIEdgeInsets(
             top: view.safeAreaInsets.top,
             left: 0,
@@ -77,9 +74,12 @@ class MapViewController: UIViewController {
     @IBAction func recordButtonPressed(_ sender: UIButton) {
         isRecording = !isRecording
         isRecording ? startRouteRecording() : stopRouteRecording()
+        saveButton.setEnabled(isRecording)
+        
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
+        
     }
 }
 
@@ -103,6 +103,8 @@ extension MapViewController: GMSMapViewDelegate {
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status == .authorizedWhenInUse else { return }
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

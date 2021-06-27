@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2CC208AD5A61409039BC0D58 /* Pods_NavigationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CAF3C509F3FCC8831C4732 /* Pods_NavigationApp.framework */; };
 		F81D3C002688ACD100F4030E /* UIView+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3BFF2688ACD100F4030E /* UIView+Attributes.swift */; };
+		F81D3C032688BAE400F4030E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3C022688BAE400F4030E /* CustomButton.swift */; };
+		F81D3C052688BB7200F4030E /* UIColor+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D3C042688BB7200F4030E /* UIColor+Name.swift */; };
 		F8C3A1BA267126BC0016990B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A1B9267126BC0016990B /* AppDelegate.swift */; };
 		F8C3A1BC267126BC0016990B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A1BB267126BC0016990B /* SceneDelegate.swift */; };
 		F8C3A1BE267126BC0016990B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A1BD267126BC0016990B /* MapViewController.swift */; };
@@ -22,6 +24,8 @@
 		BB77A1FB148694903B2B44E7 /* Pods-NavigationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationApp.debug.xcconfig"; path = "Target Support Files/Pods-NavigationApp/Pods-NavigationApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DF013C4ECCB7E93134333D6D /* Pods-NavigationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationApp.release.xcconfig"; path = "Target Support Files/Pods-NavigationApp/Pods-NavigationApp.release.xcconfig"; sourceTree = "<group>"; };
 		F81D3BFF2688ACD100F4030E /* UIView+Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Attributes.swift"; sourceTree = "<group>"; };
+		F81D3C022688BAE400F4030E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F81D3C042688BB7200F4030E /* UIColor+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Name.swift"; sourceTree = "<group>"; };
 		F8C3A1B6267126BC0016990B /* NavigationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C3A1B9267126BC0016990B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8C3A1BB267126BC0016990B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +60,17 @@
 			isa = PBXGroup;
 			children = (
 				F81D3BFF2688ACD100F4030E /* UIView+Attributes.swift */,
+				F81D3C042688BB7200F4030E /* UIColor+Name.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F81D3C012688BACF00F4030E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F81D3C022688BAE400F4030E /* CustomButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F8C3A1AD267126BC0016990B = {
@@ -82,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F81D3BFE2688ACB100F4030E /* Extensions */,
+				F81D3C012688BACF00F4030E /* Views */,
 				F8C3A1B9267126BC0016990B /* AppDelegate.swift */,
 				F8C3A1BB267126BC0016990B /* SceneDelegate.swift */,
 				F8C3A1BD267126BC0016990B /* MapViewController.swift */,
@@ -236,8 +250,10 @@
 			files = (
 				F8C3A1BE267126BC0016990B /* MapViewController.swift in Sources */,
 				F81D3C002688ACD100F4030E /* UIView+Attributes.swift in Sources */,
+				F81D3C052688BB7200F4030E /* UIColor+Name.swift in Sources */,
 				F8C3A1BA267126BC0016990B /* AppDelegate.swift in Sources */,
 				F8C3A1BC267126BC0016990B /* SceneDelegate.swift in Sources */,
+				F81D3C032688BAE400F4030E /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
