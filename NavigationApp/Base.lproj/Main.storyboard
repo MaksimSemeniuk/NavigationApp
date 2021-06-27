@@ -25,98 +25,97 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-37-ETH">
                                 <rect key="frame" x="0.0" y="707" width="414" height="155"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m5c-HH-18q">
-                                        <rect key="frame" x="60" y="30" width="294" height="95"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-jU-Czg">
+                                        <rect key="frame" x="30" y="10" width="354" height="71"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Php-d0-QQZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="294" height="41"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qHl-re-oA8">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="35.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0a1-WN-2tf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="294" height="20.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1Z-Ez-Jzv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 м" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aea-ip-MKL">
-                                                                <rect key="frame" x="147" y="0.0" width="147" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZGm-z4-gyZ">
-                                                        <rect key="frame" x="0.0" y="20.5" width="294" height="20.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnY-xU-4vl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 мин." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-v9-OUa">
-                                                                <rect key="frame" x="147" y="0.0" width="147" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="891-57-wck">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="35.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D4-WG-bd8">
+                                                        <rect key="frame" x="177" y="0.0" width="177" height="35.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-nv-lwA">
-                                                <rect key="frame" x="0.0" y="51" width="294" height="44"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-4p-ha7">
+                                                <rect key="frame" x="0.0" y="35.5" width="354" height="35.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-fc-0EA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="137" height="44"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="44" id="2r2-vR-8kb"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Начать запись">
-                                                            <color key="titleColor" name="naLightGreyColor"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="ibCornerRadius">
-                                                                <real key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFV-gS-BQo"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-FC-3s6">
-                                                        <rect key="frame" x="157" y="0.0" width="137" height="44"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="44" id="sfQ-Nq-1Ij"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Сохранить">
-                                                            <color key="titleColor" name="naLightGreyColor"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="ibCornerRadius">
-                                                                <real key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gG-wd-pKw"/>
-                                                        </connections>
-                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6u-yA-UqI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="35.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-3Y-vPx">
+                                                        <rect key="frame" x="177" y="0.0" width="177" height="35.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-ks-eYn">
+                                        <rect key="frame" x="30" y="91" width="354" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-4i-Mhg">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="HBM-VX-lmU"/>
+                                                </constraints>
+                                                <state key="normal" title="Start recording">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMd-xQ-93o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mel-lP-PeZ">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="X2P-X1-mjJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Save route">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Rc-Pj-Jql"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="naLightGreyColor"/>
                                 <constraints>
-                                    <constraint firstItem="m5c-HH-18q" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="60" id="6rc-zd-aEc"/>
-                                    <constraint firstItem="m5c-HH-18q" firstAttribute="top" secondItem="Rr9-37-ETH" secondAttribute="top" constant="30" id="SWv-U7-Aw6"/>
-                                    <constraint firstAttribute="bottom" secondItem="m5c-HH-18q" secondAttribute="bottom" constant="30" id="p2g-3b-Hxs"/>
-                                    <constraint firstAttribute="trailing" secondItem="m5c-HH-18q" secondAttribute="trailing" constant="60" id="q7W-LM-7hX"/>
+                                    <constraint firstAttribute="height" constant="155" id="E5N-rY-d0D"/>
+                                    <constraint firstAttribute="trailing" secondItem="QfX-jU-Czg" secondAttribute="trailing" constant="30" id="FNJ-dg-gLs"/>
+                                    <constraint firstItem="QfX-jU-Czg" firstAttribute="top" secondItem="Rr9-37-ETH" secondAttribute="top" constant="10" id="M24-Jr-yNS"/>
+                                    <constraint firstItem="fyf-ks-eYn" firstAttribute="top" secondItem="QfX-jU-Czg" secondAttribute="bottom" constant="10" id="R0J-K7-y4k"/>
+                                    <constraint firstItem="fyf-ks-eYn" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="30" id="Uzh-6V-PUO"/>
+                                    <constraint firstItem="QfX-jU-Czg" firstAttribute="leading" secondItem="Rr9-37-ETH" secondAttribute="leading" constant="30" id="eda-47-eBW"/>
+                                    <constraint firstAttribute="bottom" secondItem="fyf-ks-eYn" secondAttribute="bottom" constant="20" id="kTE-Jb-XJT"/>
+                                    <constraint firstAttribute="trailing" secondItem="fyf-ks-eYn" secondAttribute="trailing" constant="30" id="lRB-ac-d7t"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
@@ -138,14 +137,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="distanceLabel" destination="aea-ip-MKL" id="zZh-ud-ctc"/>
+                        <outlet property="distanceLabel" destination="9D4-WG-bd8" id="s2e-k8-Q3l"/>
                         <outlet property="mapView" destination="JyN-ir-2ex" id="5Yv-Uy-A20"/>
-                        <outlet property="recordButton" destination="zY5-fc-0EA" id="6Ai-1P-PFw"/>
-                        <outlet property="recordInfoStackView" destination="Php-d0-QQZ" id="J5b-0k-fEL"/>
+                        <outlet property="recordButton" destination="aCx-4i-Mhg" id="giL-5p-E4g"/>
                         <outlet property="recordInfoView" destination="Rr9-37-ETH" id="JOr-rA-5aF"/>
                         <outlet property="recordInfoViewBottomConstraint" destination="4XJ-gE-MfZ" id="Q8i-eP-xoh"/>
-                        <outlet property="saveButton" destination="wu5-FC-3s6" id="yj2-mk-WfK"/>
-                        <outlet property="timeLabel" destination="6mt-v9-OUa" id="4Gt-iF-ep0"/>
+                        <outlet property="recordInfoViewHeightConstraint" destination="E5N-rY-d0D" id="SuB-jU-jDF"/>
+                        <outlet property="saveButton" destination="Mel-lP-PeZ" id="78b-AF-gFg"/>
+                        <outlet property="timeLabel" destination="Df9-3Y-vPx" id="YCm-ah-sTs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
