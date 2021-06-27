@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyN-ir-2ex" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-37-ETH">
                                 <rect key="frame" x="0.0" y="707" width="414" height="155"/>
                                 <subviews>
@@ -75,6 +79,9 @@
                                                         <state key="normal" title="Начать запись">
                                                             <color key="titleColor" name="naLightGreyColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFV-gS-BQo"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-FC-3s6">
                                                         <rect key="frame" x="157" y="0.0" width="137" height="44"/>
@@ -85,6 +92,9 @@
                                                         <state key="normal" title="Сохранить">
                                                             <color key="titleColor" name="naLightGreyColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gG-wd-pKw"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -98,10 +108,6 @@
                                     <constraint firstAttribute="bottom" secondItem="m5c-HH-18q" secondAttribute="bottom" constant="30" id="p2g-3b-Hxs"/>
                                     <constraint firstAttribute="trailing" secondItem="m5c-HH-18q" secondAttribute="trailing" constant="60" id="q7W-LM-7hX"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyN-ir-2ex" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -120,8 +126,9 @@
                         <outlet property="distanceLabel" destination="aea-ip-MKL" id="zZh-ud-ctc"/>
                         <outlet property="mapView" destination="JyN-ir-2ex" id="5Yv-Uy-A20"/>
                         <outlet property="recordButton" destination="zY5-fc-0EA" id="6Ai-1P-PFw"/>
-                        <outlet property="recordInfiStackView" destination="Php-d0-QQZ" id="J5b-0k-fEL"/>
+                        <outlet property="recordInfoStackView" destination="Php-d0-QQZ" id="J5b-0k-fEL"/>
                         <outlet property="recordInfoView" destination="Rr9-37-ETH" id="JOr-rA-5aF"/>
+                        <outlet property="recordInfoViewBottomConstraint" destination="4XJ-gE-MfZ" id="Q8i-eP-xoh"/>
                         <outlet property="saveButton" destination="wu5-FC-3s6" id="yj2-mk-WfK"/>
                         <outlet property="timeLabel" destination="6mt-v9-OUa" id="4Gt-iF-ep0"/>
                     </connections>
@@ -136,7 +143,7 @@
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="naLightGreyColor">
-            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
