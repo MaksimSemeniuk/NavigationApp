@@ -27,7 +27,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAR-mb-BS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-999" y="-518"/>
+            <point key="canvasLocation" x="-720" y="-548"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tdR-Ow-Tjx">
@@ -38,12 +38,57 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="caA-ub-p1y"/>
+                        <segue destination="zQk-nm-uYT" kind="relationship" relationship="rootViewController" id="L0Y-r7-Kdl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4F-Ec-KXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2657" y="-518"/>
+            <point key="canvasLocation" x="-3064" y="-534"/>
+        </scene>
+        <!--Phone Login View Controller-->
+        <scene sceneID="CT7-oM-TuR">
+            <objects>
+                <viewController storyboardIdentifier="PhoneLoginViewController" id="zQk-nm-uYT" customClass="PhoneLoginViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RtM-fd-1Lb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-7C-iit">
+                                <rect key="frame" x="63" y="435.5" width="288" height="79"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+7 111 111 11 11" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-r3-gqt">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-h2-sKa">
+                                        <rect key="frame" x="0.0" y="49" width="288" height="30"/>
+                                        <state key="normal" title="Продолжить"/>
+                                        <connections>
+                                            <segue destination="qbh-7c-nak" kind="show" id="VZw-Ul-clD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sbb-i7-zN7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SZz-7C-iit" firstAttribute="centerX" secondItem="Sbb-i7-zN7" secondAttribute="centerX" id="3Ho-Ab-uXq"/>
+                            <constraint firstItem="SZz-7C-iit" firstAttribute="centerY" secondItem="Sbb-i7-zN7" secondAttribute="centerY" id="APc-bA-qS3"/>
+                            <constraint firstItem="Sbb-i7-zN7" firstAttribute="trailing" secondItem="SZz-7C-iit" secondAttribute="trailing" constant="63" id="cK2-Cj-O72"/>
+                            <constraint firstItem="SZz-7C-iit" firstAttribute="leading" secondItem="Sbb-i7-zN7" secondAttribute="leading" constant="63" id="kGZ-Cr-OIS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ySK-gg-cZJ"/>
+                    <connections>
+                        <outlet property="phoneTextField" destination="8X7-r3-gqt" id="ybg-SS-So2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISX-mY-Eua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2290" y="-1224"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -198,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1793" y="-518"/>
+            <point key="canvasLocation" x="-1459" y="-548"/>
         </scene>
         <!--Side MenuRoot View Controller-->
         <scene sceneID="7eN-2o-Y3x">
@@ -331,19 +376,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qei-Rz-73u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="577" y="-518"/>
+            <point key="canvasLocation" x="43" y="-548"/>
+        </scene>
+        <!--Verification View Controller-->
+        <scene sceneID="T2e-f3-LKD">
+            <objects>
+                <viewController id="qbh-7c-nak" customClass="SMSVerificationViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Vg-Lh-UcI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1Sr-Nx-Fhr">
+                                <rect key="frame" x="63" y="435.5" width="288" height="79"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_ _ _ _" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyh-JN-e98">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCC-gX-a5k">
+                                        <rect key="frame" x="0.0" y="49" width="288" height="30"/>
+                                        <state key="normal" title="Продолжить"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="lYT-le-TvW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cTG-Y3-eBs"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cTG-Y3-eBs" firstAttribute="trailing" secondItem="1Sr-Nx-Fhr" secondAttribute="trailing" constant="63" id="Lwt-eN-oDh"/>
+                            <constraint firstItem="1Sr-Nx-Fhr" firstAttribute="leading" secondItem="cTG-Y3-eBs" secondAttribute="leading" constant="63" id="O61-E3-gOw"/>
+                            <constraint firstItem="1Sr-Nx-Fhr" firstAttribute="centerY" secondItem="cTG-Y3-eBs" secondAttribute="centerY" id="Y1s-Zp-DVx"/>
+                            <constraint firstItem="1Sr-Nx-Fhr" firstAttribute="centerX" secondItem="cTG-Y3-eBs" secondAttribute="centerX" id="jkG-RC-r5d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gyx-wg-JJy"/>
+                    <connections>
+                        <outlet property="codeTextField" destination="Tyh-JN-e98" id="MyA-De-j9I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ie-mY-16o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1458" y="-1224"/>
         </scene>
     </scenes>
     <resources>
         <image name="side-menu" width="64" height="64"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.45882352941176469" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.45899999141693115" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="naLightGreyColor">
-            <color red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83700001239776611" green="0.83700001239776611" blue="0.83700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
