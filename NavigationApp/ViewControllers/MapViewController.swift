@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
             self?.observation?.invalidate()
         }
         updateUI()
-        saveButton.setEnabled(false)
+        saveButton.setEnabledWithAnimation(false)
     }
     
     deinit {
@@ -92,7 +92,7 @@ class MapViewController: UIViewController {
     @IBAction func recordButtonPressed(_ sender: UIButton) {
         isRecording = !isRecording
         isRecording ? startRouteRecording() : stopRouteRecording()
-        saveButton.setEnabled(isRecording)
+        saveButton.setEnabledWithAnimation(isRecording)
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {

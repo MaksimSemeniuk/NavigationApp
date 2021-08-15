@@ -60,13 +60,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-h2-sKa">
                                         <rect key="frame" x="0.0" y="49" width="288" height="30"/>
                                         <state key="normal" title="Продолжить"/>
                                         <connections>
-                                            <segue destination="qbh-7c-nak" kind="show" id="VZw-Ul-clD"/>
+                                            <action selector="continueButtonPressed:" destination="zQk-nm-uYT" eventType="touchUpInside" id="pTx-tF-g0f"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,13 +93,13 @@
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="BYZ-38-t0r" customClass="MapViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyN-ir-2ex" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-37-ETH">
@@ -381,25 +381,25 @@
         <!--Verification View Controller-->
         <scene sceneID="T2e-f3-LKD">
             <objects>
-                <viewController id="qbh-7c-nak" customClass="SMSVerificationViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SMSVerificationViewController" id="qbh-7c-nak" customClass="SMSVerificationViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Vg-Lh-UcI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1Sr-Nx-Fhr">
-                                <rect key="frame" x="63" y="435.5" width="288" height="79"/>
+                                <rect key="frame" x="63" y="413.5" width="288" height="79"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="_ _ _ _" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyh-JN-e98">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="one-time-code"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCC-gX-a5k">
                                         <rect key="frame" x="0.0" y="49" width="288" height="30"/>
                                         <state key="normal" title="Продолжить"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="lYT-le-TvW"/>
+                                            <action selector="continueButtonPressed:" destination="qbh-7c-nak" eventType="touchUpInside" id="AkJ-MT-flo"/>
                                         </connections>
                                     </button>
                                 </subviews>
