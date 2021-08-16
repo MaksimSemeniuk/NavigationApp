@@ -6,6 +6,7 @@ target 'NavigationApp' do
   pod 'GoogleMaps'
   pod 'SideMenu', '~> 6.0'
   pod 'Firebase/Auth'
+  pod ‘Firebase/Database’
 end
 
 post_install do |installer|
