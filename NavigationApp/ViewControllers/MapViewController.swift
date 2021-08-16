@@ -31,6 +31,10 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         mapView.delegate = self
         locationManager.delegate = self
+        
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
+
         // Listen to the myLocation property of GMSMapView, get first location and invalidate observation.
         observation = mapView.observe(\.myLocation, options: [.new]) { [weak self] mapView, _ in
             guard let location = mapView.myLocation else { return }
@@ -119,9 +123,8 @@ extension MapViewController: GMSMapViewDelegate {
 
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        print("Did change auth = \(status)")
         guard status == .authorizedWhenInUse else { return }
-        mapView.isMyLocationEnabled = true
-        mapView.settings.myLocationButton = true
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

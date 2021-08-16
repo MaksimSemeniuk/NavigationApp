@@ -3,7 +3,7 @@
 
 target 'NavigationApp' do
   use_frameworks!
-  pod 'GoogleMaps', '5.0.0'
+  pod 'GoogleMaps'
   pod 'SideMenu', '~> 6.0'
   pod 'Firebase/Auth'
 end
